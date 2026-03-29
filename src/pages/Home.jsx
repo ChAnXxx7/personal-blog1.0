@@ -76,16 +76,6 @@ function Home() {
             </div>
           </FadeInSection>
         </div>
-        <FadeInSection delay={200}>
-          <div className="hero-visual">
-            <div className="visual-grid">
-              <div className="grid-line grid-line-1"></div>
-              <div className="grid-line grid-line-2"></div>
-              <div className="grid-line grid-line-3"></div>
-              <div className="grid-line grid-line-4"></div>
-            </div>
-          </div>
-        </FadeInSection>
       </section>
 
       <section className="features section">
