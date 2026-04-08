@@ -9,28 +9,28 @@
 .favorites-grid {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: var(--space-8);
 }
 
 .favorite-section {
   background: var(--bg-secondary);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 32px;
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
 }
 
 .favorite-header {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 24px;
-  padding-bottom: 16px;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-5);
   border-bottom: 1px solid var(--border);
   color: var(--accent);
 }
 
 .favorite-title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--text-primary);
 }
@@ -38,35 +38,31 @@
 .favorite-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: var(--space-4);
 }
 
 .favorite-item {
-  padding: 20px;
+  padding: var(--space-5);
   background: var(--bg-tertiary);
-  border-radius: 8px;
-  transition: all 0.2s ease;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
 }
 
 .favorite-item:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px var(--shadow);
-}
-
-.favorite-item-content {
-  flex: 1;
+  background: var(--bg-primary);
 }
 
 .favorite-item-title {
   font-size: 15px;
   font-weight: 600;
-  margin-bottom: 4px;
+  margin-bottom: var(--space-1);
 }
 
 .favorite-item-meta {
   font-size: 13px;
-  color: var(--text-secondary);
-  margin-bottom: 8px;
+  color: var(--accent);
+  margin-bottom: var(--space-2);
 }
 
 .favorite-item-desc {
